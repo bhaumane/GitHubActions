@@ -1,0 +1,25 @@
+# Secrate variables are a powerful feature in GitHub Actions that allow you to store sensitive information, such as API keys, passwords, or any other confidential data, securely within your repository. 
+# They can be used in your workflows without exposing the actual values in your code.
+# Secret variables are encrypted and can only be accessed by workflows that have been granted permission to use them.
+# In this example, we will demonstrate how to use secret variables in a GitHub Actions workflow.
+# Secret Variable Example
+name: Secret Variable Example
+
+on:
+  workflow_dispatch:
+env:
+  cloud: "GitHub Actions"
+jobs:
+  secret_variable_job:
+    runs-on: ubuntu-latest
+    env:
+      greeting: "Hello"
+
+    steps:
+      - name: Print the Secret variable
+        env:
+          first_name: "Bhau"
+        run: |
+          echo "$greeting, $first_name is using $cloud! with event ${{ github.event_name }} and workflow ${{ github.workflow }}"
+          echo "The repository is ${{ github.repository }} and the actor is ${{ github.actor }}."
+          echo "The secret value is ${{ secrets.MY_SECRET_VARIABLE }}"

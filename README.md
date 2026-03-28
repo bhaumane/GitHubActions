@@ -35,3 +35,11 @@ https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#avai
 When using the workflow_dispatch event, you can optionally spacify inputs that are passed to the workflow.
 
 ---
+
+**Secrate variables**
+
+Secrate variables are a powerful feature in GitHub Actions that allow you to store sensitive information, such as API keys, passwords, or any other confidential data, securely within your repository. 
+They can be used in your workflows without exposing the actual values in your code.
+Secret variables are encrypted and can only be accessed by workflows that have been granted permission to use them.
+
+---
