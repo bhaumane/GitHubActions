@@ -1,0 +1,18 @@
+# Configuration variable workflow example
+name: Configuration Variable Example
+on:
+  workflow_dispatch:
+env:  
+  cloud: "GitHub Actions"
+
+jobs:
+  configuration_variable_job:
+    runs-on: ubuntu-latest
+    env:
+      greeting: "Hello"
+
+    steps:
+      - name: Print the Configuration variable
+        run: echo "$greeting, $first_name is using $cloud! with project ${{ var.PROJECT_ID }}"
+        env:
+          first_name: "Bhau"

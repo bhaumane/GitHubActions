@@ -14,3 +14,9 @@ You can define variables that are scoped for:
 - A spacific step within a job
 
 ---
+
+**Configuration variables for Multiple Workflow**:
+
+You can create configuration variables for use across multiple workflows, and can define them at either the organization, repository or environment level.
+
+---
