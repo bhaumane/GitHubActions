@@ -1,0 +1,27 @@
+# Context variables are a powerful feature in GitHub Actions that allow you to access information about the workflow run, 
+# the event that triggered the workflow, and other relevant data. 
+# They can be used to customize the behavior of your workflow based on the context in which it is running.
+# Context variables are available in all steps of a workflow and can be accessed using the syntax ${{ context.variable_name }}.
+# In this example, we will demonstrate how to use context variables in a GitHub Actions workflow.
+# Context Variable Example
+name: Context Variable Example
+
+on:
+  workflow_dispatch:
+
+env:
+  cloud: "GitHub Actions"
+
+jobs:
+  context_variable_job:
+    runs-on: ubuntu-latest
+    env:
+      greeting: "Hello"
+
+    steps:
+      - name: Print the Context variable
+        env:
+          first_name: "Bhau"
+        run: |
+          echo "$greeting, $first_name is using $cloud! with event ${{ github.event_name }} and workflow ${{ github.workflow }}"
+          echo "The repository is ${{ github.repository }} and the actor is ${{ github.actor }}."

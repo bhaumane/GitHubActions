@@ -20,3 +20,12 @@ You can define variables that are scoped for:
 You can create configuration variables for use across multiple workflows, and can define them at either the organization, repository or environment level.
 
 ---
+
+**Context variables from GitHub Metadata**
+
+Contexts are a way to access information about workflow runs, variables, runner environments, jobs, and steps.
+For more details about context variables refere below link:
+https://docs.github.com/en/actions/reference/workflows-and-actions/contexts
+
+---
+
