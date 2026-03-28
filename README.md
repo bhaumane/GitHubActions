@@ -81,27 +81,27 @@ https://docs.github.com/en/actions/concepts/runners
 
 ---
 
-# Limitations of GitHub Hosted Runners
+## Limitations of GitHub Hosted Runners
 
 
- 1. Job Execution Time: GitHub Hosted Runners have a maximum execution time limit of 6 hours per job.
+ 1. **Job Execution Time**: GitHub Hosted Runners have a maximum execution time limit of 6 hours per job.
  If a job exceeds this limit, it will be automatically terminated.
- 2. Workflow Run Time: Each workflow runs is limited to 35 days. If a workflow run exceeds this limit, it will be automatically cancelled.
+ 2. **Workflow Run Time**: Each workflow runs is limited to 35 days. If a workflow run exceeds this limit, it will be automatically cancelled.
  This period includes execution duration, and time spent on waiting and approval.
- 3. API requests: You can execute up to 1000 API requests per hour for a repository. If you exceed this limit, you will receive a 403 Forbidden response until the limit resets. 
- 4. Concurrent Jobs: The number of concurrent jobs you can run depends on your GitHub plan. 
+ 3. **API requests**: You can execute up to 1000 API requests per hour for a repository. If you exceed this limit, you will receive a 403 Forbidden response until the limit resets. 
+ 4. **Concurrent Jobs**: The number of concurrent jobs you can run depends on your GitHub plan. 
  Free Plan: 20 concurrent jobs, Pro Plan: 60 concurrent jobs, Team Plan: 180 concurrent jobs, Enterprise Plan: 180 concurrent jobs.
 
- # Limitations of Self-Hosted Runners
+ ## Limitations of Self-Hosted Runners
 
- 
- 1. Job Execution Time: Each job in a workflow can run for up to 5 days of execution time on a self-hosted runner. If a job exceeds this limit, it will be automatically terminated.
- 2. Workflow Run Time: Each workflow run is limited to 35 days. If a workflow run exceeds this limit, it will be automatically cancelled.
+
+ 1. **Job Execution Time**: Each job in a workflow can run for up to 5 days of execution time on a self-hosted runner. If a job exceeds this limit, it will be automatically terminated.
+ 2. **Workflow Run Time**: Each workflow run is limited to 35 days. If a workflow run exceeds this limit, it will be automatically cancelled.
  This period includes execution duration, and time spent on waiting and approval.
- 3. API requests: You can execute up to 1000 API requests per hour for a repository. If you exceed this limit, you will receive a 403 Forbidden response until the limit resets.
- 4. Concurrent Jobs: The number of concurrent jobs you can run on self-hosted runners depends on the number of runners you have set up and their capacity.
- 5. Job Matrix: No more than 500 workflow run can be queued in a 10 second interval  for a repository. If you exceed this limit, you will receive a 403 Forbidden response until the limit resets.
- 6. Registring self-hosted runners: You can register up to 10000 self-hosted runners per repository, organization, or enterprise. 
+ 3. **API requests**: You can execute up to 1000 API requests per hour for a repository. If you exceed this limit, you will receive a 403 Forbidden response until the limit resets.
+ 4. **Concurrent Jobs**: The number of concurrent jobs you can run on self-hosted runners depends on the number of runners you have set up and their capacity.
+ 5. **Job Matrix**: No more than 500 workflow run can be queued in a 10 second interval  for a repository. If you exceed this limit, you will receive a 403 Forbidden response until the limit resets.
+ 6. **Registring self-hosted runners**: You can register up to 10000 self-hosted runners per repository, organization, or enterprise. 
  If you exceed this limit, you will receive an error message when trying to register additional runners.
 
 ---
