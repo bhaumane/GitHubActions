@@ -13,6 +13,6 @@ jobs:
 
     steps:
       - name: Print the Configuration variable
-        run: echo "$greeting, $first_name is using $cloud! with project ${{ var.PROJECT_ID }}"
         env:
           first_name: "Bhau"
+        run: echo "$greeting, $first_name is using $cloud! with project ${{ vars.PROJECT_ID }}"
