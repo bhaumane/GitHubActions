@@ -105,3 +105,10 @@ https://docs.github.com/en/actions/concepts/runners
  If you exceed this limit, you will receive an error message when trying to register additional runners.
 
 ---
+
+## Setup self hosted runners on Google Cloud VM
+
+A self-hosted runner is a machine that you set up and manage to run GitHub Actions workflows.
+It allows you to run workflows on your own infrastructure, giving you more control over the environment and resources used for your workflows.
+
+---
