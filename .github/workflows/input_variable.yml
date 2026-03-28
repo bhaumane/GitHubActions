@@ -1,0 +1,27 @@
+# Input variables are a powerful feature in GitHub Actions that allow you to pass data into your workflow when it is triggered.
+# They can be used to customize the behavior of your workflow based on user input or other dynamic data.
+# Input variables are defined in the workflow file and can be accessed using the syntax ${{ inputs.variable_name }}.
+# In this example, we will demonstrate how to use input variables in a GitHub Actions workflow.
+# Input Variable Example
+name: Input Variable Example
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Your name'
+        required: true
+        default: 'Bhau'
+      greeting:
+        description: 'Greeting message'
+        required: false
+        default: 'Hello'
+
+jobs:
+  input_variable_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print the Input variable
+        run: |
+          echo "${{ inputs.greeting }}, ${{ inputs.name }}! Welcome to GitHub Actions!"

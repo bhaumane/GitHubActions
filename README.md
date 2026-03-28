@@ -25,7 +25,13 @@ You can create configuration variables for use across multiple workflows, and ca
 
 Contexts are a way to access information about workflow runs, variables, runner environments, jobs, and steps.
 For more details about context variables refere below link:
-https://docs.github.com/en/actions/reference/workflows-and-actions/contexts
+
+https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#available-contexts
 
 ---
 
+**Input for manually triggered workflow**
+
+When using the workflow_dispatch event, you can optionally spacify inputs that are passed to the workflow.
+
+---
