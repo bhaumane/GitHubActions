@@ -67,6 +67,8 @@ These are virtual machines (VMs) hosted by GitHub that come pre-installed with t
 **Self-hosted Runners**: 
 
 These are physical, virtual, or containerized systems that you deploy and manage to run jobs from GitHub Actions.
+A self-hosted runner is a machine that you set up and manage to run GitHub Actions workflows.
+It allows you to run workflows on your own infrastructure, giving you more control over the environment and resources used for your workflows.
 
 **Control**: You have more control over the hardware, operating system, and software environment, allowing for custom configurations (e.g., specific hardware, local network access).
 
@@ -106,9 +108,5 @@ https://docs.github.com/en/actions/concepts/runners
 
 ---
 
-## Setup self hosted runners on Google Cloud VM
-
-A self-hosted runner is a machine that you set up and manage to run GitHub Actions workflows.
-It allows you to run workflows on your own infrastructure, giving you more control over the environment and resources used for your workflows.
 
 ---
