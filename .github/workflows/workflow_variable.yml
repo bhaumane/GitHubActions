@@ -1,0 +1,19 @@
+# Single workflow variable example
+name: Workflow Variable Example
+on:
+  workflow_dispatch:
+
+env:
+  cloud: "GitHub Actions"
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      greeting: "Hello"
+
+    steps:
+      - name: Print a greeting message
+        run: echo "$greeting, $name is using $cloud!"
+        env:
+          name: "Bhau"
