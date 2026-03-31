@@ -26,7 +26,7 @@ jobs:
         # Run tests by taking reference of tests.py file and create an artifact of test results
       - name: Run tests
         run: |
-          pytest --junitxml=test-results.xml
+          pytest tests.py --junitxml=test-results.xml
 
 
       - name: Create artifact
